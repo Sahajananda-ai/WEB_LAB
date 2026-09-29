@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sahajananda Bolad | Resume</title>
+
+    <style>
+        /* ==============================
+           PAGE / GENERAL
+        ============================== */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #eeeeee;
+
+            font-family: Arial, Helvetica, sans-serif;
+            color: #111111;
+
+            font-size: 11px;
+            line-height: 1.35;
+        }
+
+        .resume {
+            width: 210mm;
+            min-height: 297mm;
+
+            margin: 25px auto;
+            padding: 14mm 12mm;
+
+            background: white;
+
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        }
+
+
+        /* ==============================
+           HEADER
+        ============================== */
+
+        .header {
+            margin-bottom: 10px;
+        }
+
+        .name {
+            margin: 0 0 2px 0;
+
+            color: #28596a;
+
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+        }
+
+        .subtitle {
+            margin: 0 0 5px 0;
+
+            color: #555555;
+
+            font-size: 11px;
+        }
+
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+
+            margin-bottom: 7px;
+
+            font-size: 10.5px;
+        }
+
+        .contact span {
+            display: inline-block;
+        }
+
+        .contact span:not(:last-child)::after {
+            content: "|";
+            margin: 0 9px;
+            color: #555555;
+        }
+
+        .contact a {
+            color: #28596a;
+            text-decoration: underline;
+        }
+
+        .summary {
+            margin: 0;
+
+            text-align: justify;
+
+            font-size: 10.8px;
+            line-height: 1.35;
+        }
+
+
+        /* ==============================
+           SECTION HEADINGS
+        ============================== */
+
+        .section {
+            margin-top: 13px;
+        }
+
+        .section-title {
+            margin: 0 0 5px 0;
+            padding-bottom: 3px;
+
+            color: #28596a;
+
+            border-bottom: 1.5px solid #28596a;
+
+            font-size: 11px;
+            font-weight: 700;
+
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+        }
+
+
+        /* ==============================
+           EDUCATION TABLE
+        ============================== */
+
+        table {
+            width: 100%;
+
+            border-collapse: collapse;
+
+            font-size: 10.5px;
+        }
+
+        th,
+        td {
+            border: 1px solid #222222;
+
+            padding: 5px 7px;
+
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #28596a;
+            color: white;
+
+            font-weight: 700;
+        }
+
+        th:last-child,
+        td:last-child {
+            width: 30%;
+        }
+
+
+        /* ==============================
+           SKILLS / EXPLORING
+        ============================== */
+
+        ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        li {
+            margin-bottom: 3px;
+        }
+
+        .bold {
+            font-weight: 700;
+        }
+
+
+        /* ==============================
+           PROJECTS
+        ============================== */
+
+        .project {
+            margin-bottom: 8px;
+        }
+
+        .project:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-title {
+            margin-bottom: 2px;
+
+            font-weight: 700;
+        }
+
+        .project-tech {
+            color: #666666;
+
+            font-size: 10px;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        .project ul {
+            margin-top: 1px;
+        }
+
+
+        /* ==============================
+           PRINT
+        ============================== */
+
+        @media print {
+
+            body {
+                background: white;
+            }
+
+            .resume {
+                width: 210mm;
+                min-height: 297mm;
+
+                margin: 0;
+                padding: 14mm 12mm;
+
+                box-shadow: none;
+            }
+
+            @page {
+                size: A4;
+                margin: 0;
+            }
+
+            a {
+                color: #28596a;
+            }
+        }
+
+
+        /* ==============================
+           MOBILE
+        ============================== */
+
+        @media screen and (max-width: 800px) {
+
+            body {
+                background: white;
+            }
+
+            .resume {
+                width: 100%;
+                min-height: 100vh;
+
+                margin: 0;
+                padding: 25px;
+
+                box-shadow: none;
+            }
+
+            .name {
+                font-size: 22px;
+            }
+
+            .contact {
+                line-height: 1.8;
+            }
+
+            .contact span:not(:last-child)::after {
+                margin: 0 5px;
+            }
+
+            table {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="resume">
+
+        <!-- ==========================
+             HEADER
+        =========================== -->
+
+        <header class="header">
+
+            <h1 class="name">
+                SAHAJANANDA BOLAD
+            </h1>
+
+            <p class="subtitle">
+                Computer Science Engineering Student
+                &nbsp;|&nbsp;
+                Web Development (MERN) & AI/ML
+            </p>
+
+            <div class="contact">
+
+                <span>Bengaluru, Karnataka</span>
+
+                <span>8431831034</span>
+
+                <span>
+                    <a href="mailto:boladsahajanand@gmail.com">
+                        boladsahajanand@gmail.com
+                    </a>
+                </span>
+
+                <span>
+                    <a
+                        href="https://www.linkedin.com/"
+                        target="_blank"
+                    >
+                        LinkedIn
+                    </a>
+                </span>
+
+                <span>
+                    <a
+                        href="https://github.com/"
+                        target="_blank"
+                    >
+                        GitHub
+                    </a>
+                </span>
+
+            </div>
+
+            <p class="summary">
+                Third-year Computer Science Engineering student at BMSIT with
+                a 9.14 CGPA and hands-on experience across full-stack web
+                development and AI/ML. Comfortable picking up new tools
+                quickly — currently building projects around the MERN stack,
+                Python-based ML, and retrieval-based AI (RAG). Looking for
+                an internship/entry-level role to apply and grow these skills
+                on real-world problems.
+            </p>
+
+        </header>
+
+
+        <!-- ==========================
+             EDUCATION
+        =========================== -->
+
+        <section class="section">
+
+            <h2 class="section-title">
+                Education
+            </h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Qualification</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>
+                            <strong>
+                                B.E. Computer Science Engineering
+                            </strong>
+                            — BMS Institute of Technology & Management
+                            (BMSIT&M), Bengaluru
+                            · Expected 2028
+                        </td>
+
+                        <td>
+                            CGPA: 9.14 / 10
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Pre-University Course (XII / PUC)
+                        </td>
+
+                        <td>
+                            96.5%
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            SSLC (X)
+                        </td>
+
+                        <td>
+                            79%
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- ==========================
+             TECHNICAL SKILLS
+        =========================== -->
+
+        <section class="section">
+
+            <h2 class="section-title">
+                Technical Skills
+            </h2>
+
+            <ul>
+
+                <li>
+                    <span class="bold">Web Development:</span>
+                    MERN Stack (MongoDB, Express.js, React.js, Node.js),
+                    HTML, CSS, JavaScript
+                </li>
+
+                <li>
+                    <span class="bold">AI / Machine Learning:</span>
+                    Python, Machine Learning Fundamentals
+                </li>
+
+                <li>
+                    <span class="bold">APIs & Emerging Tech:</span>
+                    REST API basics, Retrieval-Augmented Generation (RAG) basics
+                </li>
+
+                <li>
+                    <span class="bold">Tools:</span>
+                    Git, GitHub
+                </li>
+
+                <li>
+                    <span class="bold">Core Strengths:</span>
+                    Problem Solving, Analytical Thinking, Fast Learner
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ==========================
+             CURRENTLY EXPLORING
+        =========================== -->
+
+        <section class="section">
+
+            <h2 class="section-title">
+                Currently Exploring
+            </h2>
+
+            <ul>
+
+                <li>
+                    LangChain & vector databases, to go deeper on RAG pipelines
+                </li>
+
+                <li>
+                    Docker and cloud fundamentals (AWS / GCP)
+                </li>
+
+                <li>
+                    Advanced Data Structures & Algorithms
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ==========================
+             PROJECTS
+        =========================== -->
+
+        <section class="section">
+
+            <h2 class="section-title">
+                Projects
+            </h2>
+
+
+            <!-- Project 1 -->
+
+            <div class="project">
+
+                <div class="project-title">
+                    Heritage AR —
+                    Cultural Heritage AR Experience
+
+                    <span class="project-tech">
+                        (Unity, C#, Augmented Reality)
+                    </span>
+                </div>
+
+                <ul>
+
+                    <li>
+                        Open-source AR application that brings cultural
+                        heritage sites and artifacts to life, making them
+                        interactive and accessible to visitors and learners.
+                    </li>
+
+                    <li>
+                        Built the AR interaction layer and scene logic in Unity
+                        using C#.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Project 2 -->
+
+            <div class="project">
+
+                <div class="project-title">
+                    Smart Agriculture AI Platform
+
+                    <span class="project-tech">
+                        (Python, Machine Learning, RAG)
+                    </span>
+                </div>
+
+                <ul>
+
+                    <li>
+                        AI platform designed to help farmers get reliable,
+                        context-aware answers on crop care, soil health,
+                        and farming best practices.
+                    </li>
+
+                    <li>
+                        Implemented a Retrieval-Augmented Generation (RAG)
+                        pipeline in Python to ground responses in real
+                        agricultural data.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Project 3 -->
+
+            <div class="project">
+
+                <div class="project-title">
+                    Smart Parking Management System
+
+                    <span class="project-tech">
+                        (MERN Stack)
+                    </span>
+                </div>
+
+                <ul>
+
+                    <li>
+                        Web application for managing parking space availability
+                        and bookings in real time.
+                    </li>
+
+                    <li>
+                        Built with MongoDB, Express.js, React.js, and Node.js
+                        — designed the front-end interface and backend REST APIs.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+</html>
